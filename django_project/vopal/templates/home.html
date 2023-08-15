@@ -1,0 +1,13 @@
+{% extends  'bace.html' %}
+{% block content %}
+
+<h1>Hello {{name}}!!!!!</h1>
+<form action="add" method="post">
+
+    {% csrf_token %}
+    
+    Enter 1st value : <input type="text" name="n1"><br>
+    Enter 2nd value : <input type="text" name="n2"><br>
+    <input type="submit">
+</form>
+{% endblock %}
